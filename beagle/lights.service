@@ -1,0 +1,10 @@
+[Unit]
+Description=Beagleboard GPIO control
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/server.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
